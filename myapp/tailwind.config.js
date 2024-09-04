@@ -4,7 +4,13 @@ module.exports = {
      './templates/**/*.html'
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily :{
+        angsana : ["Angsana New"],
+        sarabun : ["Sarabun"]
+
+      }
+    },
   },
   plugins: [],
 }

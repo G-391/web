@@ -1,7 +1,23 @@
 {% extends "_base.html" %}
 
+{% block title %}Home{% endblock %}
+
 {% block content %}
-	<h1 class="text-center text-lg text-Slate-700 ">
-		Hello css...
-	</h1>
+<div class="box-content w-33 h-33 border-4 border-slate-500 p-4 text-center font-sarabun
+">
+	HELLO
+</div>
+<div class="box-border h-auto w-44 p-4 border-4 border-slate-500">
+	When controlling the flow of text, using the CSS property
+	<span class="inline bg-slate-500 text-slate-50">display: inline</span>
+	will cause the text inside the element to wrap normally. While using the
+	property
+	<span class="inline-block bg-slate-500 text-slate-50"
+	>display: inline-block</span
+	>
+	will wrap the element to prevent the text inside from extending beyond its
+	parent. Lastly, using the property
+	<span class="block bg-slate-500 text-slate-50">display: block</span> will put
+	the element on its own line and fill its parent.
+	</div>
 {% endblock content %}
