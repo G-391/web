@@ -592,74 +592,30 @@ video {
   position: static;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mt-4 {
   margin-top: 1rem;
-}
-
-.box-border {
-  box-sizing: border-box;
-}
-
-.box-content {
-  box-sizing: content-box;
 }
 
 .block {
   display: block;
 }
 
-.inline-block {
-  display: inline-block;
+.flex {
+  display: flex;
 }
 
-.inline {
-  display: inline;
+.border {
+  border-width: 1px;
 }
 
-.h-auto {
-  height: auto;
+.font-mitr {
+  font-family: Mitr;
 }
 
-.w-44 {
-  width: 11rem;
-}
-
-.border-4 {
-  border-width: 4px;
-}
-
-.border-slate-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(100 116 139 / var(--tw-border-opacity));
-}
-
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
-.p-4 {
-  padding: 1rem;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.font-angsana {
-  font-family: Angsana New;
+.font-prompt {
+  font-family: Prompt;
 }
 
 .font-sarabun {
   font-family: Sarabun;
-}
-
-.text-slate-50 {
-  --tw-text-opacity: 1;
-  color: rgb(248 250 252 / var(--tw-text-opacity));
 }

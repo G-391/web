@@ -16,9 +16,23 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import index
+from myapp import views
+from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index, name='index'),
+    path('',views.home),
+    path('cal',views.cal),
+    path('cer',views.cer),
+    path('meekrathee',views.meekrathee),
+    path('miangkham',views.miangkham),
+    path('fishorange',views.fishorange),
+    path('Lonkembaknat',views.Lonkembaknat),
+    path('kanghetphor',views.kanghetphor),
 ]
+
+# เพิ่มเส้นทางสำหรับไฟล์มีเดีย
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

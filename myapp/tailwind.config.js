@@ -7,7 +7,10 @@ module.exports = {
     extend: {
       fontFamily :{
         angsana : ["Angsana New"],
-        sarabun : ["Sarabun"]
+        sarabun : ["Sarabun"],
+        mitr : ["Mitr"],
+        prompt : ["Prompt"],
+
 
       }
     },

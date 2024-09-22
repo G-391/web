@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>อะไรรึ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+    {% block title %}
+
+    {% endblock %}
+</head>
+<body>
+    <nav class="navbar" style="background-color: #DAA520;">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <figure class="image is-64x32">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/food-f3d1e.appspot.com/o/th%20(1).jpg?alt=media&token=3c7553ac-daf3-40e2-b5e9-1a04074109f6" alt="Logo">
+                </figure>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/">หน้าแรก</a>
+                <a class="navbar-item" href="cal">ตารางเทียบแคลอรี่</a>
+                <a class="navbar-item" href="cer">ผู้จัดทำ</a>
+            </div>
+        </div>
+    </nav>
+        {% block content %}
+
+        {% endblock %}
+</body>
+</html>

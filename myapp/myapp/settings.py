@@ -12,6 +12,15 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 
+# settings.py
+
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# MEDIA CONFIGURATION
+MEDIA_URL = '/media/'  # URL เพื่อเข้าถึงไฟล์มีเดีย
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # โฟลเดอร์ที่จะเก็บไฟล์มีเดีย
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -128,3 +137,4 @@ COMPRESS_ROOT = BASE_DIR / 'static'
 COMPRESS_ENABLED = True
 
 STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
+

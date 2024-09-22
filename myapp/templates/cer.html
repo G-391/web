@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Profile Card
+{% endblock %}
+
+{% block head %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+  <style>
+    .card-image {
+      text-align: center;
+    }
+    .card-content {
+      padding: 1.5rem;
+    }
+    .is-inline-block {
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+    .tag {
+      margin-bottom: 5px;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <div class="card" style="width: 350px; margin: 20px auto;">
+    <div class="card-image">
+        <figure class="image is-4by3">
+        <img src="https://firebasestorage.googleapis.com/v0/b/food-f3d1e.appspot.com/o/th%20(1).jpg?alt=media&token=3c7553ac-daf3-40e2-b5e9-1a04074109f6" alt="Profile Image">
+      </figure>
+    </div>
+
+    <div class="card-content">
+      <div class="media">
+        <div class="media-content">
+          <p class="title is-4">นายวานิช นาถาบำรุง</p>
+          <p class="subtitle is-6">นักศึกษาสาขาเทคโนโลยีสารสนเทศและการสื่อสาร</p>
+        </div>
+      </div>
+
+      <div class="content">
+        กินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอนกินนอน
+      </div>
+
+      <div class="tags">
+        <span class="tag is-success">eat</span>
+        <span class="tag is-danger">sleep</span>
+      </div>
+    </div>
+  </div>
+{% endblock %}
